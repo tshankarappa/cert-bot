@@ -16,9 +16,9 @@
   },
   "sites": [
     {
-      "subject": "example.com",
+      "subject": "ec2-54-176-231-238.us-west-1.compute.amazonaws.com",
       "altnames": [
-        "example.com"
+        "ec2-54-176-231-238.us-west-1.compute.amazonaws.com"
       ],
       "renewAt": 1
     }
