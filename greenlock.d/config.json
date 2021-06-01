@@ -16,11 +16,18 @@
   },
   "sites": [
     {
-      "subject": "example.com",
+      "subject": "test.shankarappa.com",
       "altnames": [
-        "example.com"
+        "test.shankarappa.com"
       ],
-      "renewAt": 1
+      "renewAt": 1626299969769
+    },
+    {
+      "subject": "test2.shankarappa.com",
+      "altnames": [
+        "test2.shankarappa.com"
+      ],
+      "renewAt": 1626299969769
     }
   ]
 }
