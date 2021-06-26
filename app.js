@@ -7,8 +7,7 @@ var Greenlock = require("greenlock");
 var app = express();
 
 let store = require('greenlock-storage-s3').create({
-    accessKeyId: 'AKIA3S3LRSI357F72MO6'                // Replace with your accessKeyId
-    , secretAccessKey: 'S/dRHwibdmo40VwBhaNM85swZXti0prPm8uNuLuw'      // Replace with your secretAccessKey
+
     , bucketRegion: 'us-west-2'            // Replace with your bucketRegion
     , bucketName: 'cert-bot'                // Replace with your bucketName
     , configDir: 'acme/'                    // Recommended
