@@ -5,6 +5,18 @@
 var express = require("express");
 var Greenlock = require("greenlock");
 var app = express();
+
+let store = require('greenlock-storage-s3').create({
+    accessKeyId: 'AKIA3S3LRSI357F72MO6'                // Replace with your accessKeyId
+    , secretAccessKey: 'S/dRHwibdmo40VwBhaNM85swZXti0prPm8uNuLuw'      // Replace with your secretAccessKey
+    , bucketRegion: 'us-west-2'            // Replace with your bucketRegion
+    , bucketName: 'cert-bot'                // Replace with your bucketName
+    , configDir: 'acme/'                    // Recommended
+    , accountsDir: 'accounts/'              // Recommended
+    , debug: true                           // Debug
+});
+
+
 app.get('/', (req, res) => {
      res.setHeader("Content-Type", "text/html; charset=utf-8");
     
@@ -21,7 +33,8 @@ else
 app.get('/add/:domain', (req, res) => {
     var pkg = require('./package.json');
     var gl = Greenlock.create({
-        configDir: './greenlock.d/',
+        //configDir: './greenlock.d/',
+        store: store,
      
         // Staging for testing environments
         staging: true,

@@ -6,7 +6,9 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "greenlock-express": "^4.0.3"
+    "greenlock": "^4.0.4",
+    "greenlock-express": "^4.0.3",
+    "greenlock-storage-s3": "^1.1.3"
   },
   "devDependencies": {},
   "scripts": {
